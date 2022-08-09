@@ -36,7 +36,7 @@ require (
 	github.com/go-macaroon-bakery/macaroon-bakery/v3 v3.0.0-20220204130128-afeebcc9521d
 	github.com/gofrs/uuid v4.2.0+incompatible
 	github.com/golang/mock v1.6.0
-	github.com/google/go-querystring v1.0.0
+	github.com/google/go-querystring v1.1.0
 	github.com/googleapis/gnostic v0.5.5
 	github.com/gorilla/schema v0.0.0-20160426231512-08023a0215e7
 	github.com/gorilla/websocket v1.5.0
@@ -48,9 +48,9 @@ require (
 	github.com/im7mortal/kmutex v1.0.1
 	github.com/juju/ansiterm v1.0.0
 	github.com/juju/blobstore/v3 v3.0.1
-	github.com/juju/charm/v9 v9.0.1
+	github.com/juju/charm/v9 v9.0.2
 	github.com/juju/charmrepo/v7 v7.0.1
-	github.com/juju/clock v1.0.0
+	github.com/juju/clock v1.0.2
 	github.com/juju/cmd/v3 v3.0.2
 	github.com/juju/collections v1.0.0
 	github.com/juju/description/v3 v3.0.1
@@ -63,9 +63,11 @@ require (
 	github.com/juju/idmclient/v2 v2.0.0
 	github.com/juju/jsonschema v1.0.0
 	github.com/juju/jsonschema-gen v1.0.0
+	github.com/juju/juju/api v1.0.0
+	github.com/juju/juju/rpc v1.0.0
 	github.com/juju/loggo v1.0.0
 	github.com/juju/lumberjack/v2 v2.0.2
-	github.com/juju/mgo/v3 v3.0.2
+	github.com/juju/mgo/v3 v3.0.3
 	github.com/juju/mutex/v2 v2.0.0
 	github.com/juju/names/v4 v4.0.0
 	github.com/juju/naturalsort v1.0.0
@@ -90,17 +92,17 @@ require (
 	github.com/juju/worker/v3 v3.0.1
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
 	github.com/kr/pretty v0.3.0
-	github.com/lxc/lxd v0.0.0-20220526200742-11ace6e6c1b3
+	github.com/lxc/lxd v0.0.0-20220805101614-ce5d10282234
 	github.com/mattn/go-isatty v0.0.14
 	github.com/mitchellh/go-linereader v0.0.0-20190213213312-1b945b3263eb
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/oracle/oci-go-sdk/v47 v47.1.0
 	github.com/packethost/packngo v0.19.0
-	github.com/pkg/sftp v1.13.4
+	github.com/pkg/sftp v1.13.5
 	github.com/prometheus/client_golang v1.7.1
 	github.com/prometheus/client_model v0.2.0
 	github.com/rs/xid v1.4.0
-	github.com/vishvananda/netlink v1.2.0-beta
+	github.com/vishvananda/netlink v1.2.1-beta.2
 	github.com/vmware/govmomi v0.21.1-0.20191008161538-40aebf13ba45
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 	golang.org/x/net v0.0.0-20220728211354-c7608f3a8462
@@ -111,7 +113,7 @@ require (
 	google.golang.org/api v0.78.0
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 	gopkg.in/httprequest.v1 v1.2.1
-	gopkg.in/ini.v1 v1.66.4
+	gopkg.in/ini.v1 v1.66.6
 	gopkg.in/juju/environschema.v1 v1.0.1-0.20201027142642-c89a4490670a
 	gopkg.in/macaroon-bakery.v2 v2.3.0
 	gopkg.in/macaroon.v2 v2.1.0
@@ -203,7 +205,7 @@ require (
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/rogpeppe/fastuuid v1.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.8.1 // indirect
-	github.com/sirupsen/logrus v1.8.1 // indirect
+	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/vishvananda/netns v0.0.0-20211101163701-50045581ed74 // indirect
 	github.com/xdg-go/stringprep v1.0.3 // indirect
@@ -216,12 +218,13 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20220525015930-6ca3db687a9d // indirect
-	google.golang.org/grpc v1.46.2 // indirect
+	google.golang.org/genproto v0.0.0-20220720214146-176da50484ac // indirect
+	google.golang.org/grpc v1.48.0 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/errgo.v1 v1.0.1 // indirect
 	gopkg.in/gobwas/glob.v0 v0.2.3 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
+	gopkg.in/macaroon-bakery.v3 v3.0.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	k8s.io/kube-openapi v0.0.0-20211115234752-e816edb12b65 // indirect
 	sigs.k8s.io/json v0.0.0-20211020170558-c049b76a60c6 // indirect
@@ -239,3 +242,9 @@ replace gopkg.in/yaml.v2 => github.com/juju/yaml/v2 v2.0.0
 replace github.com/dustin/go-humanize v1.0.0 => github.com/dustin/go-humanize v0.0.0-20141228071148-145fabdb1ab7
 
 replace github.com/hashicorp/raft-boltdb => github.com/juju/raft-boltdb v0.0.0-20200518034108-40b112c917c5
+
+replace github.com/juju/juju/rpc => ./rpc
+
+replace github.com/juju/juju/api => ./api
+
+replace github.com/juju/juju => ./
