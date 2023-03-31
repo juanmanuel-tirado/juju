@@ -1,0 +1,32 @@
+name: "Docs"
+on:
+  push:
+    branches:
+      - 'develop'
+  workflow_dispatch:
+
+jobs:
+  cli:
+    name: Sync CLI docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: 'go.mod'
+
+      - name: Build Juju client
+        run: |
+          go install ./cmd/juju
+
+      - name: Generate docs
+        run: |
+          # Create temp dir to hold docs
+          DOCS_DIR=$(mktemp -d)
+          echo "{dir}={$DOCS_DIR}" >> $GITHUB_OUTPUT
+          
+          juju documentation --split --out=$DOCS_DIR
