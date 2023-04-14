@@ -29,4 +29,4 @@ jobs:
           DOCS_DIR=$(mktemp -d)
           echo "{dir}={$DOCS_DIR}" >> $GITHUB_OUTPUT
           
-          juju documentation --split --out=$DOCS_DIR
+          juju documentation --split --out=$DOCS_DIR --no-index --discourse-ids $POST_IDS
